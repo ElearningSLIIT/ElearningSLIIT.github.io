@@ -35,7 +35,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+.fa-flag:before { content: "\f024"; }
 .flaticon-bolt:before { content: "\f100"; }
 .flaticon-light-bulb:before { content: "\f101"; }
 .flaticon-cyber:before { content: "\f102"; }
