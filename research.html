@@ -18,6 +18,8 @@
   
   <link rel="stylesheet" href="css/flaticon.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/research.css">
+
 </head>
 <body>
   <div class="wrap">
@@ -100,31 +102,150 @@
           <div class="btn-group" role="group" aria-label="Basic example">
               <button type="button" class="btn btn-secondary">Gamification</button>
               <button type="button" class="btn btn-secondary"> Information Visualisation</button>
+              <button type="button" class="btn btn-secondary"> Online Delivery </button>
               <button type="button" class="btn btn-secondary"> Information Visualisation</button>
               <button type="button" class="btn btn-secondary"> Information Visualisation</button>
+              <!--<button type="button" class="btn btn-secondary"> Information Visualisation</button>
               <button type="button" class="btn btn-secondary"> Information Visualisation</button>
-              <button type="button" class="btn btn-secondary"> Information Visualisation</button>
-              <button type="button" class="btn btn-secondary"> Information Visualisation</button>
-              <button type="button" class="btn btn-secondary"> Information Visualisation</button>
+              <button type="button" class="btn btn-secondary"> Information Visualisation</button>-->
 
           </div>
-      <div class="btn-group" role="group" aria-label="Basic example">
-              <button type="button" class="btn btn-secondary">Gamification</button>
-              <button type="button" class="btn btn-secondary"> Information Visualisation</button>
-              <button type="button" class="btn btn-secondary"> Information Visualisation</button>
-              <button type="button" class="btn btn-secondary"> Information Visualisation</button>
-              <button type="button" class="btn btn-secondary"> Information Visualisation</button>
-              <button type="button" class="btn btn-secondary"> Information Visualisation</button>
-              <button type="button" class="btn btn-secondary"> Information Visualisation</button>
-              <button type="button" class="btn btn-secondary"> Information Visualisation</button>
 
-          </div>
 
 
 </div>
 </section>
 
-<section class="ftco-section ftco-no-pt">
+  <center>
+      <div id="myBtnContainer">
+          <button class="btnR active" onclick="filterSelection('all')"> Show all</button>
+          <button class="btnR" onclick="filterSelection('unGraduate')"> UnderGraduate</button>
+          <button class="btnR" onclick="filterSelection('PGraduate')"> PostGraduate</button>
+          <button class="btnR" onclick="filterSelection('Other')"> Other</button>
+      </div>
+  </center>
+
+
+  <!-- Portfolio Gallery Grid -->
+  <div class="rowR">
+      <div class="columnR Other">
+          <div class="contentR">
+              <img src="images/gammifiationn.jpg" alt="gamificaton" style="width:100%">
+              <h4>eLearning platform to check functional and expert knowledge using gamificaton</h4>
+              <p>There are lot of information sources but students don't have a place to check whether they gained functional or expert knowledge on..</p>
+          </div>
+      </div>
+      <div class="columnR unGraduate">
+          <div class="contentR">
+              <img src="images/gammifiationn.jpg" alt="Lights" style="width:100%">
+              <h4>eLearning platform to check functional and expert knowledge using gamificaton</h4>
+              <p>There are lot of information sources but students don't have a place to check whether they gained functional or expert knowledge on..</p>
+          </div>
+      </div>
+      <div class="columnR unGraduate">
+          <div class="contentR">
+              <img src="images/gammifiationn.jpg" alt="Nature" style="width:100%">
+              <h4>eLearning platform to check functional and expert knowledge using gamificaton</h4>
+              <p>There are lot of information sources but students don't have a place to check whether they gained functional or expert knowledge on..</p>
+          </div>
+      </div>
+
+      <div class="columnR PGraduate">
+          <div class="contentR">
+              <img src="images/gammifiationn.jpg" alt="Car" style="width:100%">
+              <h4>eLearning platform to check functional and expert knowledge using gamificaton</h4>
+              <p>There are lot of information sources but students don't have a place to check whether they gained functional or expert knowledge on..</p>
+          </div>
+      </div>
+      <div class="columnR PGraduate">
+          <div class="contentR">
+              <img src="images/gammifiationn.jpg" alt="Car" style="width:100%">
+              <h4>eLearning platform to check functional and expert knowledge using gamificaton</h4>
+              <p>There are lot of information sources but students don't have a place to check whether they gained functional or expert knowledge on..</p>
+          </div>
+      </div>
+      <div class="columnR PGraduate">
+          <div class="contentR">
+              <img src="images/gammifiationn.jpg" alt="Car" style="width:100%">
+              <h4>eLearning platform to check functional and expert knowledge using gamificaton</h4>
+              <p>There are lot of information sources but students don't have a place to check whether they gained functional or expert knowledge on..</p>
+          </div>
+      </div>
+
+      <div class="columnR Other">
+          <div class="contentR">
+              <img src="images/gammifiationn.jpg" alt="Car" style="width:100%">
+              <h4>eLearning platform to check functional and expert knowledge using gamificaton</h4>
+              <p>There are lot of information sources but students don't have a place to check whether they gained functional or expert knowledge on..</p>
+          </div>
+      </div>
+      <div class="columnR Other">
+          <div class="contentR">
+              <img src="images/gammifiationn.jpg" alt="Car" style="width:100%">
+              <h4>eLearning platform to check functional and expert knowledge using gamificaton</h4>
+              <p>There are lot of information sources but students don't have a place to check whether they gained functional or expert knowledge on..</p>
+          </div>
+      </div>
+      <div class="columnR Other">
+          <div class="contentR">
+              <img src="images/gammifiationn.jpg" alt="Car" style="width:100%">
+              <h4>eLearning platform to check functional and expert knowledge using gamificaton</h4>
+              <p>There are lot of information sources but students don't have a place to check whether they gained functional or expert knowledge on..</p>
+          </div>
+      </div>
+      <!-- END GRID -->
+  </div>
+
+  <!-- END MAIN -->
+  </div>
+
+  <script>
+      filterSelection("all")
+      function filterSelection(c) {
+          var x, i;
+          x = document.getElementsByClassName("columnR");
+          if (c == "all") c = "";
+          for (i = 0; i < x.length; i++) {
+              w3RemoveClass(x[i], "showR");
+              if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "showR");
+          }
+      }
+
+      function w3AddClass(element, name) {
+          var i, arr1, arr2;
+          arr1 = element.className.split(" ");
+          arr2 = name.split(" ");
+          for (i = 0; i < arr2.length; i++) {
+              if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+          }
+      }
+
+      function w3RemoveClass(element, name) {
+          var i, arr1, arr2;
+          arr1 = element.className.split(" ");
+          arr2 = name.split(" ");
+          for (i = 0; i < arr2.length; i++) {
+              while (arr1.indexOf(arr2[i]) > -1) {
+                  arr1.splice(arr1.indexOf(arr2[i]), 1);
+              }
+          }
+          element.className = arr1.join(" ");
+      }
+
+
+      // Add active class to the current button (highlight it)
+      var btnContainer = document.getElementById("myBtnContainer");
+      var btns = btnContainer.getElementsByClassName("btnR");
+      for (var i = 0; i < btns.length; i++) {
+          btns[i].addEventListener("click", function(){
+              var current = document.getElementsByClassName("active");
+              current[0].className = current[0].className.replace(" active", "");
+              this.className += " active";
+          });
+      }
+  </script>
+
+  <!--<section class="ftco-section ftco-no-pt">
  <div class="container">
   <div class="row justify-content-center pb-5">
     <div class="col-md-12 heading-section text-center ftco-animate">
@@ -190,7 +311,7 @@
 </div>
 </div>
 </div>
-</section>
+</section>-->
   <!--
   <section class="ftco-section bg-light ftco-faqs">
    <div class="container">
