@@ -397,6 +397,9 @@ mark,
   max-width: 100%;
   height: auto; }
   
+ .img-fluid2 {
+  max-width: 40%;
+  height: auto; } 
 
 
 .img-thumbnail {
